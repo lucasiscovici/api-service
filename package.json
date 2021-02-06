@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0",
+    "packages": [
+        {
+            "name": "ApiService Snippets SideBarMenu",
+            "description": "ApiService Snippets SideBarMenu",
+            "author": "lucas iscovici",
+            "homepage": "https://github.com/lucasiscoviciMoon/api-service",
+            "details": "https://github.com/lucasiscoviciMoon/api-service",
+            "issues": "https://github.com/lucasiscoviciMoon/api-service/issues",
+            "readme": "https://raw.github.com/lucasiscoviciMoon/api-service/master/README.md",
+            "labels": ["api-service", "snippet", "sidebar menu"],
+            "releases": [
+                {
+                    "sublime_text": "*",
+                    "details": "https://github.com/lucasiscoviciMoon/api-service/tree/sublime",
+                    "platforms": ["windows", "osx", "linux"]
+                }
+            ]
+        }
+    ]
+}

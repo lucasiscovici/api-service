@@ -1,0 +1,8 @@
+import { configure } from 'api-service'
+// import { Config } from '@/Config'
+
+configure({
+    baseUrl: "https://jsonplaceholder.typicode.com/",
+    // headers: {},
+    // auth: { Authorization: "Bearer", getToken: ()=>{} }
+})

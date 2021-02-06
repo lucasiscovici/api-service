@@ -1,0 +1,5 @@
+[
+    { "caption": "Create Api Service index", "command": "create_index_api_service", "args": {"paths": []} },
+    { "caption": "Create Api Service feature", "command": "create_feat_api_service", "args": {"paths": []} },
+    { "caption": "-" },
+]
