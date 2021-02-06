@@ -1,0 +1,10 @@
+{
+    "name": "api-service",
+    "version": "1.0.0",
+    "description": "Speed-up Api Service writing",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.21.1"
+    }
+}
