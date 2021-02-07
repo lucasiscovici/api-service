@@ -55,5 +55,5 @@ export const createApiInstance = () => {
       return Promise.reject(error);
     }
   );
-  return instance;
+  return CONFIGURATION.auth?.interceptors(instance) ?? instance;
 };
