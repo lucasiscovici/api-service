@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+import { ${1:${SELECTION}}Api } from '@/Services/Api/${2:${SELECTION/./\u$0/}}'
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>apiServiceCommand</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
