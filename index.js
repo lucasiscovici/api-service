@@ -2,6 +2,9 @@ import axios from "axios";
 const CONFIGURATION = {};
 
 let IS_CONFIGURED = false;
+
+export const awaitGently = async (rep) => rep;
+
 export const configure = ({
   baseUrl = {},
   headers = {},
@@ -39,12 +42,12 @@ export const createApiInstance = () => {
 
   const instance = axios.create(axiosCommon);
   instance.interceptors.request.use(
-    function (config) {
+    async function (config) {
       if (CONFIGURATION.auth) {
-        const getToken = CONFIGURATION.auth.getToken;
+        const token = await awaitGently(CONFIGURATION.auth.getToken());
         config.headers.Authorization = `${
           CONFIGURATION.auth.Authorization
-        } ${getToken()}`;
+        } ${token}`;
       }
       return config;
     },
