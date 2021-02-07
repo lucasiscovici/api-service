@@ -7,7 +7,7 @@ export const awaitGently = async (rep) => rep;
 
 export const configure = ({
   baseUrl = {},
-  headers = {},
+  headers = { Accept: 'application/json', 'Content-Type': 'application/json' },
   auth,
   createOpts = {},
 }) => {
