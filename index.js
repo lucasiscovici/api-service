@@ -23,12 +23,13 @@ export const configure = ({
 };
 
 export const createApi = ({ commands } = {}) => {
+  if (!IS_CONFIGURED) console.warn("Api-Service: You have to import you index.js of api-service before to createApi")
   return Object.fromEntries(
     Object.entries(commands).map(([key, command]) => {
       return [
         key,
         ({ ...args } = {}, ...otherArgs) =>
-          command({ api: CONFIGURATION.API, ...args }, ...otherArgs),
+          command({ api: CONFIGURATION.api, ...args }, ...otherArgs),
       ];
     })
   );
