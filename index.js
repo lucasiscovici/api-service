@@ -1,5 +1,5 @@
 import axios from "axios";
-const CONFIGURATION = {};
+export const CONFIGURATION = {};
 
 let IS_CONFIGURED = false;
 
