@@ -4,5 +4,5 @@ import { configure } from 'api-service'
 configure({
     baseUrl: "https://jsonplaceholder.typicode.com/",
     // headers: {},
-    // auth: { Authorization: "Bearer", getToken: ()=>{} }
+    // auth: { Authorization: "Bearer", getToken: () => {}, interceptors: () => () }
 })
